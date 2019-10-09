@@ -9,8 +9,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var closedCap = ClosedCaptioning()
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            HStack {
+                Text(self.closedCap.captioning)
+                    .font(.body)
+                    .foregroundColor(Color.white)
+                    .truncationMode(.head)
+                    .lineLimit(1)
+                    .padding()
+            }
+            .background(Color.black.opacity(0.75))
+            
+            Button(action: {
+                self.closedCap.micButtonTapped()
+            }) {
+                Image(systemName: !self.closedCap.micEnabled ? "mic.slash" : (self.closedCap.isPlaying ? "mic.circle.fill" : "mic.circle"))
+                    .font(.largeTitle)
+            }
+        }
+        .onAppear {
+            self.closedCap.getPermission()
+        }
     }
 }
 
