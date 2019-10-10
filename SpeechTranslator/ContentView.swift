@@ -16,18 +16,33 @@ struct ContentView: View {
             HStack {
                 Text(self.closedCap.captioning)
                     .font(.body)
-                    .foregroundColor(Color.white)
                     .truncationMode(.head)
-                    .lineLimit(1)
+                    .lineLimit(4)
                     .padding()
             }
-            .background(Color.black.opacity(0.75))
+            .frame(width: 350, height: 200)
+            .background(Color.red.opacity(0.25))
+            .padding()
+            
+            HStack {
+                Text(self.closedCap.translation)
+                    .font(.body)
+                    .truncationMode(.head)
+                    .lineLimit(4)
+                    .padding()
+            }
+            .frame(width: 350, height: 200)
+            .background(Color.blue.opacity(0.25))
+            .padding()
             
             Button(action: {
                 self.closedCap.micButtonTapped()
             }) {
                 Image(systemName: !self.closedCap.micEnabled ? "mic.slash" : (self.closedCap.isPlaying ? "mic.circle.fill" : "mic.circle"))
-                    .font(.largeTitle)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 75)
+                    .padding()
             }
         }
         .onAppear {
@@ -38,6 +53,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.colorScheme, .dark)
     }
 }

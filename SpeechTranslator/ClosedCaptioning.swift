@@ -8,6 +8,7 @@
 
 import Foundation
 import Speech
+import Firebase
 
 class ClosedCaptioning: ObservableObject {
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
@@ -16,8 +17,20 @@ class ClosedCaptioning: ObservableObject {
     private let audioEngine = AVAudioEngine()
     
     @Published var captioning: String = "Waiting to Start!"
+    @Published var translation: String = "Buon Giorno!"
     @Published var isPlaying: Bool = false
     @Published var micEnabled: Bool = false
+    
+    private let translator: Translator
+    
+    init (){
+        let options = TranslatorOptions(sourceLanguage: .en, targetLanguage: .it)
+        translator = NaturalLanguage.naturalLanguage().translator(options: options)
+        translator.downloadModelIfNeeded { (error) in
+            guard error == nil else { return }
+            self.micEnabled = true
+        }
+    }
     
     //Thanks to https://developer.apple.com/documentation/speech/recognizing_speech_in_live_audio
     func startRecording() throws {
@@ -50,6 +63,13 @@ class ClosedCaptioning: ObservableObject {
             if let result = result {
                 // Update the text view with the results.
                 self.captioning = result.bestTranscription.formattedString
+                self.translator.translate(result.bestTranscription.formattedString) { (translatedText, error) in
+                    guard error == nil,
+                        let translatedText = translatedText
+                        else { return }
+                    self.translation = translatedText
+                }
+                self.translate(text: result.bestTranscription.formattedString)
                 isFinal = result.isFinal
                 print("Text \(result.bestTranscription.formattedString)")
             }
@@ -88,6 +108,13 @@ class ClosedCaptioning: ObservableObject {
             } catch {
                 isPlaying = false
             }
+        }
+    }
+    
+    func translate(text: String){
+        self.translator.translate(text) { (translatedText, error) in
+            guard error == nil, let translatedText = translatedText else { return }
+            self.translation = translatedText
         }
     }
     

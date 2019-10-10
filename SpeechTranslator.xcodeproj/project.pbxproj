@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A29C2A9234E6D25003D0163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A29C2A8234E6D25003D0163 /* GoogleService-Info.plist */; };
 		0A78DA90234E292C00775D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78DA8F234E292C00775D47 /* AppDelegate.swift */; };
 		0A78DA92234E292C00775D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78DA91234E292C00775D47 /* SceneDelegate.swift */; };
 		0A78DA94234E292C00775D47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78DA93234E292C00775D47 /* ContentView.swift */; };
@@ -16,6 +17,9 @@
 		0A78DAA7234E293100775D47 /* SpeechTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78DAA6234E293100775D47 /* SpeechTranslatorTests.swift */; };
 		0A78DAB2234E293100775D47 /* SpeechTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78DAB1234E293100775D47 /* SpeechTranslatorUITests.swift */; };
 		0A78DAC0234E2AE400775D47 /* ClosedCaptioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78DABF234E2AE400775D47 /* ClosedCaptioning.swift */; };
+		327B6C1278943B09AB941F95 /* Pods_SpeechTranslator_SpeechTranslatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15B086ABBE1F537BE7D33E5 /* Pods_SpeechTranslator_SpeechTranslatorUITests.framework */; };
+		78C18317A80C88DAE9F5B81E /* Pods_SpeechTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77028BED6B29A6FA5D1759E /* Pods_SpeechTranslator.framework */; };
+		B1A3A3D08A80A86A74F32E7D /* Pods_SpeechTranslatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271FE93014F7CBF50EFBCF5 /* Pods_SpeechTranslatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012F12D6D60E642EEB8894A4 /* Pods-SpeechTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslator.release.xcconfig"; path = "Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator.release.xcconfig"; sourceTree = "<group>"; };
+		0271FE93014F7CBF50EFBCF5 /* Pods_SpeechTranslatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechTranslatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A29C2A8234E6D25003D0163 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A78DA8C234E292C00775D47 /* SpeechTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A78DA8F234E292C00775D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A78DA91234E292C00775D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,13 @@
 		0A78DAB1234E293100775D47 /* SpeechTranslatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslatorUITests.swift; sourceTree = "<group>"; };
 		0A78DAB3234E293100775D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A78DABF234E2AE400775D47 /* ClosedCaptioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedCaptioning.swift; sourceTree = "<group>"; };
+		3F16CEDF79F7D6EB0120F922 /* Pods-SpeechTranslator-SpeechTranslatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslator-SpeechTranslatorUITests.release.xcconfig"; path = "Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92289BC1942069136E3DF374 /* Pods-SpeechTranslator-SpeechTranslatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslator-SpeechTranslatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C77028BED6B29A6FA5D1759E /* Pods_SpeechTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82BA00042C8D3F214957B2A /* Pods-SpeechTranslatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslatorTests.release.xcconfig"; path = "Target Support Files/Pods-SpeechTranslatorTests/Pods-SpeechTranslatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCF7BFDABDACBAD7C1EB013E /* Pods-SpeechTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslator.debug.xcconfig"; path = "Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		D8DD7F2D28BDD494D7BC8936 /* Pods-SpeechTranslatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechTranslatorTests.debug.xcconfig"; path = "Target Support Files/Pods-SpeechTranslatorTests/Pods-SpeechTranslatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F15B086ABBE1F537BE7D33E5 /* Pods_SpeechTranslator_SpeechTranslatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechTranslator_SpeechTranslatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C18317A80C88DAE9F5B81E /* Pods_SpeechTranslator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A3A3D08A80A86A74F32E7D /* Pods_SpeechTranslatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327B6C1278943B09AB941F95 /* Pods_SpeechTranslator_SpeechTranslatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				0A78DAA5234E293100775D47 /* SpeechTranslatorTests */,
 				0A78DAB0234E293100775D47 /* SpeechTranslatorUITests */,
 				0A78DA8D234E292C00775D47 /* Products */,
+				135A1E95DB60DC13CCBC923E /* Pods */,
+				E285A0686E47739888AB5A98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +127,7 @@
 				0A78DA95234E293100775D47 /* Assets.xcassets */,
 				0A78DA9A234E293100775D47 /* LaunchScreen.storyboard */,
 				0A78DA9D234E293100775D47 /* Info.plist */,
+				0A29C2A8234E6D25003D0163 /* GoogleService-Info.plist */,
 				0A78DA97234E293100775D47 /* Preview Content */,
 			);
 			path = SpeechTranslator;
@@ -139,6 +159,29 @@
 			path = SpeechTranslatorUITests;
 			sourceTree = "<group>";
 		};
+		135A1E95DB60DC13CCBC923E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7BFDABDACBAD7C1EB013E /* Pods-SpeechTranslator.debug.xcconfig */,
+				012F12D6D60E642EEB8894A4 /* Pods-SpeechTranslator.release.xcconfig */,
+				92289BC1942069136E3DF374 /* Pods-SpeechTranslator-SpeechTranslatorUITests.debug.xcconfig */,
+				3F16CEDF79F7D6EB0120F922 /* Pods-SpeechTranslator-SpeechTranslatorUITests.release.xcconfig */,
+				D8DD7F2D28BDD494D7BC8936 /* Pods-SpeechTranslatorTests.debug.xcconfig */,
+				C82BA00042C8D3F214957B2A /* Pods-SpeechTranslatorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E285A0686E47739888AB5A98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77028BED6B29A6FA5D1759E /* Pods_SpeechTranslator.framework */,
+				F15B086ABBE1F537BE7D33E5 /* Pods_SpeechTranslator_SpeechTranslatorUITests.framework */,
+				0271FE93014F7CBF50EFBCF5 /* Pods_SpeechTranslatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A78DAB6234E293100775D47 /* Build configuration list for PBXNativeTarget "SpeechTranslator" */;
 			buildPhases = (
+				770ED6403D313B885ADBAC0D /* [CP] Check Pods Manifest.lock */,
 				0A78DA88234E292C00775D47 /* Sources */,
 				0A78DA89234E292C00775D47 /* Frameworks */,
 				0A78DA8A234E292C00775D47 /* Resources */,
+				CAEE87857B173DD9588484A6 /* [CP] Embed Pods Frameworks */,
+				7DADA004CAC6B43D79CC3035 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A78DAB9234E293100775D47 /* Build configuration list for PBXNativeTarget "SpeechTranslatorTests" */;
 			buildPhases = (
+				C6B026A6D3F877700F30853D /* [CP] Check Pods Manifest.lock */,
 				0A78DA9E234E293100775D47 /* Sources */,
 				0A78DA9F234E293100775D47 /* Frameworks */,
 				0A78DAA0234E293100775D47 /* Resources */,
@@ -181,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A78DABC234E293100775D47 /* Build configuration list for PBXNativeTarget "SpeechTranslatorUITests" */;
 			buildPhases = (
+				8E314C89D8E95832295CAA89 /* [CP] Check Pods Manifest.lock */,
 				0A78DAA9234E293100775D47 /* Sources */,
 				0A78DAAA234E293100775D47 /* Frameworks */,
 				0A78DAAB234E293100775D47 /* Resources */,
+				117236E511F59A62D900C70D /* [CP] Embed Pods Frameworks */,
+				2A1A301C765B2539E81053BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A78DA9C234E293100775D47 /* LaunchScreen.storyboard in Resources */,
+				0A29C2A9234E6D25003D0163 /* GoogleService-Info.plist in Resources */,
 				0A78DA99234E293100775D47 /* Preview Assets.xcassets in Resources */,
 				0A78DA96234E293100775D47 /* Assets.xcassets in Resources */,
 			);
@@ -264,6 +315,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		117236E511F59A62D900C70D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A1A301C765B2539E81053BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator-SpeechTranslatorUITests/Pods-SpeechTranslator-SpeechTranslatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770ED6403D313B885ADBAC0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechTranslator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DADA004CAC6B43D79CC3035 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E314C89D8E95832295CAA89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechTranslator-SpeechTranslatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B026A6D3F877700F30853D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechTranslatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAEE87857B173DD9588484A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechTranslator/Pods-SpeechTranslator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A78DA88234E292C00775D47 /* Sources */ = {
@@ -436,6 +624,7 @@
 		};
 		0A78DAB7234E293100775D47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF7BFDABDACBAD7C1EB013E /* Pods-SpeechTranslator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +645,7 @@
 		};
 		0A78DAB8234E293100775D47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012F12D6D60E642EEB8894A4 /* Pods-SpeechTranslator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +666,7 @@
 		};
 		0A78DABA234E293100775D47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8DD7F2D28BDD494D7BC8936 /* Pods-SpeechTranslatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +688,7 @@
 		};
 		0A78DABB234E293100775D47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82BA00042C8D3F214957B2A /* Pods-SpeechTranslatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +710,7 @@
 		};
 		0A78DABD234E293100775D47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92289BC1942069136E3DF374 /* Pods-SpeechTranslator-SpeechTranslatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +730,7 @@
 		};
 		0A78DABE234E293100775D47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F16CEDF79F7D6EB0120F922 /* Pods-SpeechTranslator-SpeechTranslatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

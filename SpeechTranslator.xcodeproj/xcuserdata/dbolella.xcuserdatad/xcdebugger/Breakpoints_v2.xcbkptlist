@@ -16,8 +16,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "startRecording()"
+            landmarkName = "init()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D2F43831-3E9F-4060-A4CD-804691669645 - f36fe1ee52f111f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpeechTranslator.ClosedCaptioning.__allocating_init() -&gt; SpeechTranslator.ClosedCaptioning"
+                  moduleName = "SpeechTranslator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dbolella/Coding/SpeechTranslator/SpeechTranslator/ClosedCaptioning.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  uuid = "D2F43831-3E9F-4060-A4CD-804691669645 - 88a77e8a347e1bd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpeechTranslator.ClosedCaptioning.init() -&gt; SpeechTranslator.ClosedCaptioning"
+                  moduleName = "SpeechTranslator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dbolella/Coding/SpeechTranslator/SpeechTranslator/ClosedCaptioning.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "251">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,6 +82,38 @@
             endingLineNumber = "59"
             landmarkName = "startRecording()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "89D8E911-AEC6-4854-A676-5539EC59E38D - 644144d4d6422ce2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpeechTranslator.ClosedCaptioning.startRecording() throws -&gt; ()"
+                  moduleName = "SpeechTranslator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dbolella/Coding/SpeechTranslator/SpeechTranslator/ClosedCaptioning.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1470">
+               </Location>
+               <Location
+                  uuid = "89D8E911-AEC6-4854-A676-5539EC59E38D - 505bdc5a81729a12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.SFSpeechRecognitionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpeechTranslator.ClosedCaptioning.startRecording() throws -&gt; ()"
+                  moduleName = "SpeechTranslator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dbolella/Coding/SpeechTranslator/SpeechTranslator/ClosedCaptioning.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "269">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,9 +126,9 @@
             filePath = "SpeechTranslator/ClosedCaptioning.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "micButtonTapped()"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "startRecording()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
